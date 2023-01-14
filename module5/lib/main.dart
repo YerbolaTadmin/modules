@@ -66,10 +66,18 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
         key: ScaffoldKey,
         appBar: AppBar(
           title: Text('FIRST TASK'),
+          actions: [
+            Builder(builder: (context) => IconButton(
+              onPressed: () {
+                onPressed: Scaffold.of(context).openEndDrawer();
+              },
+              icon: Icon(Icons.person)))
+          ],
         ),
         drawer: Drawer(
           child: Column(
@@ -107,6 +115,26 @@ class _MyAppState extends State<MyApp> with SingleTickerProviderStateMixin {
                 ],
               ),)
 
+            ],
+          )
+      
+
+        
+        ),
+        endDrawer: Drawer(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Expanded(child: CircleAvatar(
+                    radius: 30,
+                    backgroundImage: NetworkImage('https://picsum.photos/200/300'),
+                  ))
+                ],
+              ),
+              Text('Random photo')
             ],
           )
         ),
