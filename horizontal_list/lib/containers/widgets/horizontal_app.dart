@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Horizontal_App extends StatefulWidget {
-  const Horizontal_App({super.key});
+class HorizontalApp extends StatefulWidget {
+  const HorizontalApp({super.key});
 
   @override
-  State<Horizontal_App> createState() => _Horizontal_AppState();
+  State<HorizontalApp> createState() => _HorizontalAppState();
 }
 
-class _Horizontal_AppState extends State<Horizontal_App> {
+class _HorizontalAppState extends State<HorizontalApp> {
   var list = new List<int>.generate(100, (i) => i+1);
   @override
   Widget build(BuildContext context) {

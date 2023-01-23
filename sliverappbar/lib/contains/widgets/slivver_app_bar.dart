@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Sliverappbar extends StatefulWidget {
-  const Sliverappbar({super.key});
+class SlliverAppBar extends StatefulWidget {
+  const SlliverAppBar({super.key});
 
   @override
-  State<Sliverappbar> createState() => _SliverappbarState();
+  State<SlliverAppBar> createState() => _SlliverAppBarState();
 }
 
-class _SliverappbarState extends State<Sliverappbar> {
+class _SlliverAppBarState extends State<SlliverAppBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
