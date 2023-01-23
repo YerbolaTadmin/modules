@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class Vertical_listview extends StatefulWidget {
-  const Vertical_listview({super.key});
+class VerticalListview extends StatefulWidget {
+  const VerticalListview({super.key});
 
   @override
-  State<Vertical_listview> createState() => _Vertical_listviewState();
+  State<VerticalListview> createState() => _VerticalListviewState();
 }
 
-class _Vertical_listviewState extends State<Vertical_listview> {
+class _VerticalListviewState extends State<VerticalListview> {
   final data = List<Widget>.generate(
     20,
     (index) => Container(
