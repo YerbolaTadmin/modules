@@ -23,7 +23,8 @@ class _MyDrawerState extends State<MyDrawer> {
               "Artists",
             ),
             onTap: () {
-              Navigator.pushNamed(context, Artists.route);
+              Navigator.of(context).pop();
+              Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (BuildContext context) => Artists()), ModalRoute.withName('/artists'));
             },
           ),
           ListTile(
@@ -31,7 +32,8 @@ class _MyDrawerState extends State<MyDrawer> {
               "Home",
             ),
             onTap: () {
-              Navigator.pushNamed(context, Home.route);
+              Navigator.of(context).pop();
+              Navigator.of(context).pushAndRemoveUntil(MaterialPageRoute(builder: (BuildContext context) => Home()), ModalRoute.withName('/home '));
             },
           ),
         ],
